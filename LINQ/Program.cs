@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<string> FootballTeams = new List<string>() { "Dallas Cowboys", "Eagles", "Falcons", "The Saints", "The Bears", "Miami Dolphins" };
+
+            var orderByLength = FootballTeams.OrderBy(x => x.Length).ToList();
+
+            foreach (var x in orderByLength)
+            {
+                Console.WriteLine(x);
+            }
         }
     }
 }
